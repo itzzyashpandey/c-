@@ -1,53 +1,17 @@
-int firstoccc(int arr[], int n, int key)
-{
-    int s=0;
-    int e=n-1;
-    int mid=s+(e-s)/2;
-    int ans=-1;
-
-    while (s<=e)
+ for (int i = 0; i < n; i++)
     {
-        if (arr[mid]==key)
-        {
-            ans=mid;
-            e=mid-1;
-        }
-        else if (arr[mid]>key)
-        {
-            e=mid-1;
-        }
-        else
-        {
-            s=mid+1;
-        }
-         mid=s+(e-s)/2;
+        cout<<arr[i];
     }
-    return ans;
+    
 }
 
-int lastoccc(int arr[], int n, int key)
-{
-    int s=0;
-    int e=n-1;
-    int mid=s+(e-s)/2;
-    int ans=-1;
 
-    while (s<=e)
-    {
-        if (arr[mid]==key)
-        {
-            ans=mid;
-            s=mid-1;
-        }
-        else if (arr[mid]>key)
-        {
-            e=mid-1;
-        }
-        else
-        {
-            s=mid+1;
-        }
-         mid=s+(e-s)/2;
-    }
-    return ans;
+
+int32_t main(){
+    int arr[5]={5,7,2,6,1};
+bubbleSort(arr, 5);
+
+
+    return 0;
+    
 }
