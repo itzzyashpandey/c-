@@ -2,8 +2,8 @@
 using namespace std;
 
 void reverse(char name[] , int n){
-    s=0;
-    e=n-1;
+    int s=0;
+    int e=n-1;
 
     while(s<e) 
     {
@@ -11,7 +11,7 @@ void reverse(char name[] , int n){
         s++;
         e--;
     }
-    
+   cout<<name; 
 
 }
 
@@ -19,12 +19,21 @@ void reverse(char name[] , int n){
 
 int32_t main(){
     char name[20];
+    int n;
 
     cout<<"enter name"<<endl;
     cin>>name;
 
+
     cout<<"your name is"<<endl;
     cout<<name<<endl;
+
+    cout<<"enter length of string :"<<endl;
+    cin>>n;
+
+    
+
+    reverse(name, n);
     
 
 
